@@ -51,8 +51,6 @@ class DoctrineObject extends AbstractHydrator
      */
     public function __construct(ObjectManager $objectManager, $byValue = true)
     {
-        parent::__construct();
-
         $this->objectManager = $objectManager;
         $this->byValue       = (bool) $byValue;
     }
